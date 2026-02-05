@@ -1,0 +1,59 @@
+[project]
+name = "civ6-bridge"
+version = "0.0.1"
+description = "This project is a protocol between civ6 and programming language."
+readme = "README.md"
+authors = [
+  {name = "minsing", email = "developerminsing@gmail.com"}
+]
+maintainers = [
+  {name = "minsing", email = "developerminsing@gmail.com"}
+]
+classifiers = [
+    # TODO
+]
+license = {text = "MIT"}
+dependencies = [
+  "typer",
+  "rich",
+  "pytest>=9.0.2",
+]
+requires-python = ">= 3.10"
+
+[project.optional-dependencies]
+test = [
+    "coverage",  # testing
+    "pytest",  # testing
+    "ruff",  # linting
+    "ty", # checking types
+    "ipdb", # debugging
+]
+
+[project.urls]
+bugs = "https://github.com/minsing-jin/civ6_bridge/issues"
+changelog = "https://github.com/minsing-jin/civ6_bridge/blob/main/changelog.md"
+homepage = "https://github.com/minsing-jin/civ6_bridge"
+
+[project.scripts]
+civ6_bridge = "civ6_bridge.cli:app"
+
+[tool.ty]
+# All rules are enabled as "error" by default; no need to specify unless overriding.
+# Example override: relax a rule for the entire project (uncomment if needed).
+# rules.TY015 = "warn"  # For invalid-argument-type, warn instead of error.
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+
+[tool.uv]
+package = true
