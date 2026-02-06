@@ -1,22 +1,24 @@
-#!/usr/bin/env python
-import pytest
+"""Tests for the Civ6Bridge facade class."""
 
-"""Tests for `civ6_bridge` package."""
+from pathlib import Path
 
-# from civ6_bridge import civ6_bridge
-
-
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyfeldroy/cookiecutter-pypackage')
+from civ6_bridge.civ6_bridge import Civ6Bridge
 
 
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+def test_get_current_state_from_fixture():
+    """Test that Civ6Bridge can read a fixture log file."""
+    log_path = Path(__file__).parent / "fixtures" / "sample_lua_log.txt"
+    bridge = Civ6Bridge(log_path=log_path)
+    state = bridge.get_current_state()
+    assert state is not None
+    assert state.turn == 2  # latest frame in the fixture
+    assert len(state.players) == 1
+
+
+def test_get_current_state_empty(tmp_path):
+    """Test with a log file that has no frames."""
+    empty_log = tmp_path / "Lua.log"
+    empty_log.write_text("just some log lines\nno sentinel frames\n")
+    bridge = Civ6Bridge(log_path=empty_log)
+    state = bridge.get_current_state()
+    assert state is None

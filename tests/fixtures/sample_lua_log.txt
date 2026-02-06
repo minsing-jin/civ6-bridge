@@ -1,0 +1,10 @@
+[civ6-bridge] Event hooks registered.
+Some other log line from Civ6
+Another random log line
+[CIV6BRIDGE_BEGIN_v1]
+{"version":1,"turn":1,"players":[{"id":0,"is_alive":true,"is_human":true,"civilization":"CIVILIZATION_AMERICA","leader":"LEADER_TEDDY_ROOSEVELT","treasury":{"gold_balance":0.0,"gold_yield":5.0,"total_maintenance":0.0},"culture":{"progressing_civic":"CIVIC_CODE_OF_LAWS"},"religion":{"faith_balance":0.0,"faith_yield":0.0},"science":{"progressing_tech":"TECH_MINING","science_yield":3.0},"cities":[{"id":0,"name":"Washington","x":15,"y":22,"population":1,"owner_id":0,"buildings":[],"districts":[]}],"units":[{"id":0,"type":"UNIT_WARRIOR","name":"Warrior","x":14,"y":23,"owner_id":0,"moves_remaining":2,"max_moves":2,"combat":20,"ranged_combat":0,"range":0,"base_moves":2}]}]}
+[CIV6BRIDGE_END_v1]
+More log lines in between turns
+[CIV6BRIDGE_BEGIN_v1]
+{"version":1,"turn":2,"players":[{"id":0,"is_alive":true,"is_human":true,"civilization":"CIVILIZATION_AMERICA","leader":"LEADER_TEDDY_ROOSEVELT","treasury":{"gold_balance":5.0,"gold_yield":5.0,"total_maintenance":0.0},"culture":{"progressing_civic":"CIVIC_CODE_OF_LAWS"},"religion":{"faith_balance":0.0,"faith_yield":0.0},"science":{"progressing_tech":"TECH_MINING","science_yield":3.0},"cities":[{"id":0,"name":"Washington","x":15,"y":22,"population":1,"owner_id":0,"buildings":[],"districts":[]}],"units":[{"id":0,"type":"UNIT_WARRIOR","name":"Warrior","x":13,"y":23,"owner_id":0,"moves_remaining":2,"max_moves":2,"combat":20,"ranged_combat":0,"range":0,"base_moves":2}]}]}
+[CIV6BRIDGE_END_v1]

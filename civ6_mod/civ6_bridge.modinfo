@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="civ6-bridge" version="1"
+     xmlns="ModInfo">
+  <Properties>
+    <Name>Civ6 Bridge</Name>
+    <Description>Exports game state as JSON to Lua.log for external consumption.</Description>
+    <Authors>civ6-bridge</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Components>
+    <GameplayScript id="civ6_bridge_scripts">
+      <Items>
+        <File>Scripts/json.lua</File>
+        <File>Scripts/utils.lua</File>
+        <File>Scripts/game_state.lua</File>
+        <File>Scripts/agent_commands.lua</File>
+        <File>Scripts/event_hooks.lua</File>
+      </Items>
+    </GameplayScript>
+  </Components>
+</Mod>

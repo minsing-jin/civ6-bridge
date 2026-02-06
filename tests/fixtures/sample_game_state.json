@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "turn": 42,
+  "players": [
+    {
+      "id": 0,
+      "is_alive": true,
+      "is_human": true,
+      "civilization": "CIVILIZATION_AMERICA",
+      "leader": "LEADER_TEDDY_ROOSEVELT",
+      "treasury": {
+        "gold_balance": 150.0,
+        "gold_yield": 12.5,
+        "total_maintenance": 8.0
+      },
+      "culture": {
+        "progressing_civic": "CIVIC_CODE_OF_LAWS"
+      },
+      "religion": {
+        "faith_balance": 20.0,
+        "faith_yield": 1.5
+      },
+      "science": {
+        "progressing_tech": "TECH_MINING",
+        "science_yield": 5.0
+      },
+      "cities": [
+        {
+          "id": 0,
+          "name": "Washington",
+          "x": 15,
+          "y": 22,
+          "population": 4,
+          "owner_id": 0,
+          "buildings": ["BUILDING_MONUMENT"],
+          "districts": []
+        }
+      ],
+      "units": [
+        {
+          "id": 0,
+          "type": "UNIT_WARRIOR",
+          "name": "Warrior",
+          "x": 14,
+          "y": 23,
+          "owner_id": 0,
+          "moves_remaining": 2,
+          "max_moves": 2,
+          "combat": 20,
+          "ranged_combat": 0,
+          "range": 0,
+          "base_moves": 2
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "is_alive": true,
+      "is_human": false,
+      "civilization": "CIVILIZATION_ROME",
+      "leader": "LEADER_TRAJAN",
+      "treasury": {
+        "gold_balance": 80.0,
+        "gold_yield": 6.0,
+        "total_maintenance": 4.0
+      },
+      "culture": {
+        "progressing_civic": "CIVIC_CRAFTSMANSHIP"
+      },
+      "religion": {
+        "faith_balance": 10.0,
+        "faith_yield": 0.5
+      },
+      "science": {
+        "progressing_tech": "TECH_ANIMAL_HUSBANDRY",
+        "science_yield": 3.5
+      },
+      "cities": [
+        {
+          "id": 0,
+          "name": "Rome",
+          "x": 30,
+          "y": 10,
+          "population": 3,
+          "owner_id": 1,
+          "buildings": [],
+          "districts": []
+        }
+      ],
+      "units": [
+        {
+          "id": 0,
+          "type": "UNIT_WARRIOR",
+          "name": "Warrior",
+          "x": 31,
+          "y": 11,
+          "owner_id": 1,
+          "moves_remaining": 2,
+          "max_moves": 2,
+          "combat": 20,
+          "ranged_combat": 0,
+          "range": 0,
+          "base_moves": 2
+        }
+      ]
+    }
+  ]
+}

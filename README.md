@@ -10,6 +10,11 @@ This project is a protocol between civ6 and programming language.
 * Documentation: https://civ6-bridge.readthedocs.io.
 
 ## Features
+- You can control Civilization VI from your Python scripts.
+- You can connect to Civilization VI game and send commands or receive data.
+- Easy to use API for interacting with Civilization VI.
+- Supports multiple platforms (Windows, macOS, Linux).
+- Extensible architecture for adding new features.
 
 * TODO
 
